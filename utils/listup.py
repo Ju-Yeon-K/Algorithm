@@ -5,7 +5,7 @@ def problem_source_code():
     py_problem_list = []
     java_problem_list = []
 
-    for (path, dir, files) in os.walk("../백준/"):
+    for (path, dir, files) in os.walk("./백준/"):
         for filename in files:
             ext = os.path.splitext(filename)[-1]
             problem_name = path.split('/')[-1]
