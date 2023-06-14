@@ -1,5 +1,10 @@
 
 import os
+for (path, dir, files) in os.walk("./"):
+    for filename in files:
+        ext = os.path.splitext(filename)[-1]
+        if ext == '.py':
+            print(dir)
 
 
 def problem_source_code():
@@ -10,9 +15,10 @@ def problem_source_code():
         for filename in files:
             ext = os.path.splitext(filename)[-1]
             if ext == '.py':
-                py_problem_list.append(filename[:-3])
+                problem_name = dir[-1] # ex) '1034. 부분합'
+                py_problem_list.append(f'![{problem_name}](https://www.acmicpc.net/problem/{int(problem_name.split(". ")[0])})\n')
             if ext == '.java':
-                java_problem_list.append(filename[:-5])
+                java_problem_list.append(f'![{problem_name}](https://www.acmicpc.net/problem/{int(problem_name.split(". ")[0])})\n')
     
     return py_problem_list, java_problem_list
 
@@ -23,10 +29,13 @@ def make_read_me(py_name_list, java_name_list):
 자동으로 푼 문제 리스트업도 가능하게 매크로 설정해두었음. 
 
 - Python 문제 리스트업   
-{','.join(py_name_list)}
+-{'-'.join(py_name_list)}
 
 - Java 문제 리스트업   
-{','.join(java_name_list)}
+-{'-'.join(java_name_list)}
+
+- ![python](url)|n
+
 """
 
 
