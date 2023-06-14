@@ -1,5 +1,4 @@
 
-
 import os
 
 def problem_source_code():
@@ -12,11 +11,11 @@ def problem_source_code():
             problem_name = path.split('/')[-1]
             
             if ext == '.py':
-                py_problem_list.append(f'[{problem_name}](https://www.acmicpc.net/problem/{problem_name.split(".")[0]})')
+                py_problem_list.append(f'[{problem_name}](https://www.acmicpc.net/problem/{problem_name.split(".")[0]}) [Code]({path[1:]}/{problem_name.split(".")[1].lstrip()}.py)')
             if ext == '.java':
-                java_problem_list.append(f'[{problem_name}](https://www.acmicpc.net/problem/{problem_name.split(".")[0]})')
+                java_problem_list.append(f'[{problem_name}](https://www.acmicpc.net/problem/{problem_name.split(".")[0]}) [Code]({path[1:]}/{problem_name.split(".")[1].lstrip()}.java)')
 
-    return sorted(py_problem_list), sorted(java_problem_list)
+    return py_problem_list, java_problem_list
 
 
 def make_read_me(py_name_list, java_name_list):
