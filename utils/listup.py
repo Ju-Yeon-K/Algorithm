@@ -5,7 +5,7 @@ def problem_source_code():
     py_problem_list = []
     java_problem_list = []
 
-    for files in os.walk("./백준/"):
+    for files in os.walk("../백준/"):
         for filename in files:
             ext = os.path.splitext(filename)[-1]
             if ext == '.py':
