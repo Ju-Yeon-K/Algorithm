@@ -14,11 +14,12 @@ def problem_source_code():
     for (path, dir, files) in os.walk("./백준/"):
         for filename in files:
             ext = os.path.splitext(filename)[-1]
-            problem_name = dir[-1] # ex) '1034. 부분합'
-            if ext == '.py':
-                py_problem_list.append(f'![{problem_name}](https://www.acmicpc.net/problem/{int(problem_name.split(". ")[0])})\n')
-            if ext == '.java':
-                java_problem_list.append(f'![{problem_name}](https://www.acmicpc.net/problem/{int(problem_name.split(". ")[0])})\n')
+            if dir:
+                problem_name = dir[-1] # ex) '1034. 부분합'
+                if ext == '.py':
+                    py_problem_list.append(f'![{problem_name}](https://www.acmicpc.net/problem/{int(problem_name.split(". ")[0])})\n')
+                if ext == '.java':
+                    java_problem_list.append(f'![{problem_name}](https://www.acmicpc.net/problem/{int(problem_name.split(". ")[0])})\n')
     
     return py_problem_list, java_problem_list
 
