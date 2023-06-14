@@ -2,31 +2,18 @@ import os
 
 
 def problem_source_code():
-    py_problem_solve_code_list = []
-    java_problem_solve_code_list = []
+    py_problem_list = []
+    java_problem_list = []
 
-    directory_list = [directory for directory in os.listdir("./백준/") if ". " in directory]
-
-    for directory in directory_list:
-        dir = directory.split('. ')[1]
-        py_code_list = [file for file in os.listdir(f"./백준/") if f"{dir}" in file and file.endswith(".py")]
-        java_code_list = [file for file in os.listdir(f"./백준/") if f"{dir}" in file and file.endswith(".java")]
-        
-        if py_code_list:
-            py_problem_solve_code_list.append(py_code_list[0][:-3])
-        if java_code_list:
-            java_problem_solve_code_list.append(java_code_list[0][:-5])
-
-    return py_problem_solve_code_list, java_problem_solve_code_list
-
-def make_count_info(total_code_num, code_cnt_info):
-    count_info = f"#### 현재까지 풀어본 총 문제 수 : {total_code_num}개\n"
-
-    for name in code_cnt_info:
-        temp = f"- {name[0]} - {name[1]}개\n"
-        count_info += temp
-
-    return count_info
+    for files in os.walk("./백준/"):
+        for filename in files:
+            ext = os.path.splitext(filename)[-1]
+            if ext == '.py':
+                py_problem_list.append(filename[:-3])
+            if ext == '.java':
+                java_problem_list.append(filename[:-5])
+    
+    return py_problem_list, java_problem_list
 
 
 def make_read_me(py_name_list, java_name_list):
