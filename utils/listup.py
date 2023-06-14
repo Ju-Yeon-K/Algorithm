@@ -15,7 +15,7 @@ def problem_source_code():
             if ext == '.java':
                 java_problem_list.append(f'[{problem_name}](https://www.acmicpc.net/problem/{problem_name.split(".")[0]}) [Code]({path[1:]}/{problem_name.split(".")[1].lstrip()}.java)')
 
-    return py_problem_list, java_problem_list
+    return sorted(py_problem_list), sorted(java_problem_list)
 
 
 def make_read_me(py_name_list, java_name_list):
