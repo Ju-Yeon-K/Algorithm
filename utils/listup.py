@@ -23,9 +23,9 @@ def make_read_me(py_name_list, java_name_list):
 <img src="https://img.shields.io/badge/python-3776AB?style=flat&logo=python&logoColor=white"> <img src="https://img.shields.io/badge/-JAVA-007396?style=flat&logo=OpenJDK&logoColor=white">   
    
 
---- 
- 🐣  이 README.md 는 매크로에 의해 자동 업데이트됩니다. 
 
+ 🐣  이 README.md 는 매크로에 의해 자동 업데이트됩니다. 
+--- 
   ✔️ Python 문제 리스트업   
     - {'<br>    - '.join(py_name_list)}   
     
