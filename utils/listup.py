@@ -11,9 +11,9 @@ def problem_source_code():
             problem_name = path.split('/')[-1]
             
             if ext == '.py':
-                py_problem_list.append(f'[{problem_name}](https://www.acmicpc.net/problem/{int(problem_name.split(". ")[0])})')
+                py_problem_list.append(f'[{problem_name}](https://www.acmicpc.net/problem/{problem_name.split(". ")[0]})')
             if ext == '.java':
-                java_problem_list.append(f'[{problem_name}](https://www.acmicpc.net/problem/{int(problem_name.split(". ")[0])})')
+                java_problem_list.append(f'[{problem_name}](https://www.acmicpc.net/problem/{problem_name.split(". ")[0]})')
 
     return py_problem_list, java_problem_list
 
