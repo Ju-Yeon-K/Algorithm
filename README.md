@@ -11,5 +11,5 @@
 --- 
     
  ✔️ Java 문제 리스트업   
-    - [1000. A＋B](https://www.acmicpc.net/problem/1000) [Code](/백준/Bronze/1000. A＋B/A＋B.java)<br>    - [1330. 두 수 비교하기](https://www.acmicpc.net/problem/1330) [Code](/백준/Bronze/1330. 두 수 비교하기/두 수 비교하기.java)<br>    - [1806. 부분합](https://www.acmicpc.net/problem/1806) [Code](/백준/Gold/1806. 부분합/부분합.java)
+    - [1000. A＋B](https://www.acmicpc.net/problem/1000) [Code](/백준/Bronze/1000. A＋B/A＋B.java)<br>    - [1330. 두 수 비교하기](https://www.acmicpc.net/problem/1330) [Code](/백준/Bronze/1330. 두 수 비교하기/두 수 비교하기.java)<br>    - [1806. 부분합](https://www.acmicpc.net/problem/1806) [Code](/백준/Gold/1806. 부분합/부분합.java)<br>    - [9663. N－Queen](https://www.acmicpc.net/problem/9663) [Code](/백준/Gold/9663. N－Queen/N－Queen.java)
 
