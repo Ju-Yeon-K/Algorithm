@@ -19,7 +19,7 @@
 **2. Programmers**   
 
   ✔️ Python 문제 리스트업   
-    - [81303. 표 편집](https://school.programmers.co.kr/learn/courses/30/lessons/81303) [Code](/프로그래머스/lv3/81303. 표 편집/표 편집.py)   
+    - [43165. 타겟 넘버](https://school.programmers.co.kr/learn/courses/30/lessons/43165) [Code](/프로그래머스/lv2/43165. 타겟 넘버/타겟 넘버.py)<br>    - [81303. 표 편집](https://school.programmers.co.kr/learn/courses/30/lessons/81303) [Code](/프로그래머스/lv3/81303. 표 편집/표 편집.py)   
     
 
     
