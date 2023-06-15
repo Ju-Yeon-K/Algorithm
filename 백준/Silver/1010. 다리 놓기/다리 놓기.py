@@ -1,18 +1,15 @@
-def fac_list(N,K):
-    res = [[0]*(N+1) for _ in range(K+1)]
-    for j in range(N+1):
-        res[0][j] = 1
-    for i in range(K+1):
-        res[i][i] = 1
 
-    for i in range(1, K+1):
-        for j in range(i+1, N+1):
-            res[i][j] = res[i][j-1] + res[i-1][j-1]
-    return res
+for tc in range(int(input())):
+    N, M = map(int, input().split())
 
-T = int(input())
-for tc in range(1, T+1):
-    N, M = map(int,input().split())
-    res_list = fac_list(M,N)
-    res = res_list[N][M] 
+    if N > M:
+        M, N = N, M
+        
+    res = 1
+    for i in range(M, M-N, -1):
+        res *= i
+
+    for i in range(1, N+1):
+        res //= i
+
     print(res)
