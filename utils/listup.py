@@ -23,9 +23,9 @@ def problem_source_code():
             problem_name = path.split('/')[-1]
             
             if ext == '.py':
-                p_py_problem_list.append(f'[{problem_name}](https://www.acmicpc.net/problem/{problem_name.split(".")[0]}) [Code]({path[1:]}/{problem_name.split(".")[1].lstrip()}.py)')
+                p_py_problem_list.append(f'[{problem_name}](https://school.programmers.co.kr/learn/courses/30/lessons/{problem_name.split(".")[0]}) [Code]({path[1:]}/{problem_name.split(".")[1].lstrip()}.py)')
             if ext == '.java':
-                p_java_problem_list.append(f'[{problem_name}](https://www.acmicpc.net/problem/{problem_name.split(".")[0]}) [Code]({path[1:]}/{problem_name.split(".")[1].lstrip()}.java)')
+                p_java_problem_list.append(f'[{problem_name}](https://school.programmers.co.kr/learn/courses/30/lessons/{problem_name.split(".")[0]}) [Code]({path[1:]}/{problem_name.split(".")[1].lstrip()}.java)')
     
     return sorted(b_py_problem_list), sorted(b_java_problem_list), sorted(p_py_problem_list), sorted(p_java_problem_list)
 
