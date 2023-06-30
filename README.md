@@ -5,7 +5,7 @@
 
  🐣  이 README.md 는 매크로에 의해 자동 업데이트됩니다. 
 --- 
-[매크로 코드 보러가기 writed by Ju-yeon-k](https://github.com/Ju-Yeon-K/Self-Updating-Readme/blob/main/utils/list_up.py)
+[매크로 코드 보러가기 written by Ju-yeon-k](https://github.com/Ju-Yeon-K/Self-Updating-Readme/blob/main/utils/list_up.py)
 
 **1. Baekjoon**   
 
